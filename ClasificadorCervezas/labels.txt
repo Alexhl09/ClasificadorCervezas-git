@@ -1,0 +1,14 @@
+???
+sol_clamato_lata
+Indio_original_lata
+bohemia_clara_botella
+strongbow_red_botella
+strongbow_golden_botella
+heineken_original_botella
+tecate_light_lata
+xx_original_lata
+heineken_original_paquete
+miller_light_lata
+cartablanca_original_caguama
+tecate_light_caguama
+indio_original_caguama
