@@ -31,6 +31,17 @@
 		719E25E7215DCFD300707D17 /* Fotos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719E25E6215DCFD300707D17 /* Fotos.swift */; };
 		719E2630215E0DD400707D17 /* Tabla.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719E262F215E0DD400707D17 /* Tabla.swift */; };
 		719E2634215E102400707D17 /* Tabulador.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719E2633215E102400707D17 /* Tabulador.swift */; };
+		719E2661215E720E00707D17 /* ssd_mobilenet_8.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 719E2657215E720E00707D17 /* ssd_mobilenet_8.mlmodel */; };
+		719E2662215E720E00707D17 /* ssd_mobilenet_9.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 719E2658215E720E00707D17 /* ssd_mobilenet_9.mlmodel */; };
+		719E2663215E720E00707D17 /* ssd_mobilenet.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 719E2659215E720E00707D17 /* ssd_mobilenet.mlmodel */; };
+		719E2664215E720E00707D17 /* my_model2.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 719E265A215E720E00707D17 /* my_model2.mlmodel */; };
+		719E2665215E720E00707D17 /* ssd_mobilenet_2.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 719E265B215E720E00707D17 /* ssd_mobilenet_2.mlmodel */; };
+		719E2666215E720E00707D17 /* ssd_mobilenet_3.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 719E265C215E720E00707D17 /* ssd_mobilenet_3.mlmodel */; };
+		719E2667215E720E00707D17 /* ssd_mobilenet_6.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 719E265D215E720E00707D17 /* ssd_mobilenet_6.mlmodel */; };
+		719E2668215E720E00707D17 /* ssd_mobilenet_7.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 719E265E215E720E00707D17 /* ssd_mobilenet_7.mlmodel */; };
+		719E2669215E720E00707D17 /* ssd_mobilenet_5.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 719E265F215E720E00707D17 /* ssd_mobilenet_5.mlmodel */; };
+		719E266A215E720E00707D17 /* ssd_mobilenet_4.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 719E2660215E720E00707D17 /* ssd_mobilenet_4.mlmodel */; };
+		719E266C215E907A00707D17 /* ssd_mobilenet_10.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 719E266B215E907A00707D17 /* ssd_mobilenet_10.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,6 +71,17 @@
 		719E25E6215DCFD300707D17 /* Fotos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fotos.swift; sourceTree = "<group>"; };
 		719E262F215E0DD400707D17 /* Tabla.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tabla.swift; sourceTree = "<group>"; };
 		719E2633215E102400707D17 /* Tabulador.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tabulador.swift; sourceTree = "<group>"; };
+		719E2657215E720E00707D17 /* ssd_mobilenet_8.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = ssd_mobilenet_8.mlmodel; sourceTree = "<group>"; };
+		719E2658215E720E00707D17 /* ssd_mobilenet_9.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = ssd_mobilenet_9.mlmodel; sourceTree = "<group>"; };
+		719E2659215E720E00707D17 /* ssd_mobilenet.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = ssd_mobilenet.mlmodel; sourceTree = "<group>"; };
+		719E265A215E720E00707D17 /* my_model2.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = my_model2.mlmodel; sourceTree = "<group>"; };
+		719E265B215E720E00707D17 /* ssd_mobilenet_2.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = ssd_mobilenet_2.mlmodel; sourceTree = "<group>"; };
+		719E265C215E720E00707D17 /* ssd_mobilenet_3.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = ssd_mobilenet_3.mlmodel; sourceTree = "<group>"; };
+		719E265D215E720E00707D17 /* ssd_mobilenet_6.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = ssd_mobilenet_6.mlmodel; sourceTree = "<group>"; };
+		719E265E215E720E00707D17 /* ssd_mobilenet_7.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = ssd_mobilenet_7.mlmodel; sourceTree = "<group>"; };
+		719E265F215E720E00707D17 /* ssd_mobilenet_5.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = ssd_mobilenet_5.mlmodel; sourceTree = "<group>"; };
+		719E2660215E720E00707D17 /* ssd_mobilenet_4.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = ssd_mobilenet_4.mlmodel; sourceTree = "<group>"; };
+		719E266B215E907A00707D17 /* ssd_mobilenet_10.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = ssd_mobilenet_10.mlmodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,9 +118,9 @@
 				7101612B215C169A001D13A5 /* labels.txt */,
 				7101612A215C169A001D13A5 /* SSDPostprocessor.swift */,
 				7101612C215C169A001D13A5 /* Utility.swift */,
+				719E2656215E720E00707D17 /* modelos */,
 				710160D3215ACC2F001D13A5 /* ViewControllerCamara.swift */,
 				719E25E6215DCFD300707D17 /* Fotos.swift */,
-				719E263F215E55FA00707D17 /* modelos */,
 				71016133215C16ED001D13A5 /* Menu.swift */,
 				71016114215C1670001D13A5 /* Anchors.swift */,
 				71016116215C1677001D13A5 /* CoreMLHelpers */,
@@ -130,12 +152,23 @@
 			path = CoreMLHelpers;
 			sourceTree = "<group>";
 		};
-		719E263F215E55FA00707D17 /* modelos */ = {
+		719E2656215E720E00707D17 /* modelos */ = {
 			isa = PBXGroup;
 			children = (
+				719E2657215E720E00707D17 /* ssd_mobilenet_8.mlmodel */,
+				719E2658215E720E00707D17 /* ssd_mobilenet_9.mlmodel */,
+				719E2659215E720E00707D17 /* ssd_mobilenet.mlmodel */,
+				719E265A215E720E00707D17 /* my_model2.mlmodel */,
+				719E265B215E720E00707D17 /* ssd_mobilenet_2.mlmodel */,
+				719E265C215E720E00707D17 /* ssd_mobilenet_3.mlmodel */,
+				719E266B215E907A00707D17 /* ssd_mobilenet_10.mlmodel */,
+				719E265D215E720E00707D17 /* ssd_mobilenet_6.mlmodel */,
+				719E265E215E720E00707D17 /* ssd_mobilenet_7.mlmodel */,
+				719E265F215E720E00707D17 /* ssd_mobilenet_5.mlmodel */,
+				719E2660215E720E00707D17 /* ssd_mobilenet_4.mlmodel */,
 			);
 			path = modelos;
-			sourceTree = SOURCE_ROOT;
+			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
@@ -210,23 +243,34 @@
 			buildActionMask = 2147483647;
 			files = (
 				7101612E215C169A001D13A5 /* ViewController.swift in Sources */,
+				719E2661215E720E00707D17 /* ssd_mobilenet_8.mlmodel in Sources */,
+				719E2663215E720E00707D17 /* ssd_mobilenet.mlmodel in Sources */,
 				7101612F215C169A001D13A5 /* SSDPostprocessor.swift in Sources */,
 				71016124215C1678001D13A5 /* Predictions.swift in Sources */,
 				710160D4215ACC2F001D13A5 /* ViewControllerCamara.swift in Sources */,
 				719E2630215E0DD400707D17 /* Tabla.swift in Sources */,
 				719E2634215E102400707D17 /* Tabulador.swift in Sources */,
+				719E2667215E720E00707D17 /* ssd_mobilenet_6.mlmodel in Sources */,
 				71016115215C1670001D13A5 /* Anchors.swift in Sources */,
+				719E2664215E720E00707D17 /* my_model2.mlmodel in Sources */,
 				719E25E7215DCFD300707D17 /* Fotos.swift in Sources */,
+				719E2669215E720E00707D17 /* ssd_mobilenet_5.mlmodel in Sources */,
 				71016125215C1678001D13A5 /* MultiArray.swift in Sources */,
 				71016123215C1678001D13A5 /* BoundingBox.swift in Sources */,
 				71016127215C1678001D13A5 /* NonMaxSuppression.swift in Sources */,
 				710160DA215ACC2F001D13A5 /* ClasificadorCervezas.xcdatamodeld in Sources */,
 				71016121215C1678001D13A5 /* UIImage+CVPixelBuffer.swift in Sources */,
+				719E2668215E720E00707D17 /* ssd_mobilenet_7.mlmodel in Sources */,
 				71016134215C16ED001D13A5 /* Menu.swift in Sources */,
+				719E266C215E907A00707D17 /* ssd_mobilenet_10.mlmodel in Sources */,
+				719E266A215E720E00707D17 /* ssd_mobilenet_4.mlmodel in Sources */,
 				71016122215C1678001D13A5 /* Array.swift in Sources */,
+				719E2665215E720E00707D17 /* ssd_mobilenet_2.mlmodel in Sources */,
 				71016128215C1678001D13A5 /* MLMultiArray+Image.swift in Sources */,
+				719E2662215E720E00707D17 /* ssd_mobilenet_9.mlmodel in Sources */,
 				71016126215C1678001D13A5 /* CVPixelBuffer+Helpers.swift in Sources */,
 				710160D2215ACC2F001D13A5 /* AppDelegate.swift in Sources */,
+				719E2666215E720E00707D17 /* ssd_mobilenet_3.mlmodel in Sources */,
 				71016120215C1678001D13A5 /* Math.swift in Sources */,
 				71016131215C169A001D13A5 /* Utility.swift in Sources */,
 			);
@@ -377,6 +421,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XYQR9G9T5T;
 				INFOPLIST_FILE = ClasificadorCervezas/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -395,6 +440,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XYQR9G9T5T;
 				INFOPLIST_FILE = ClasificadorCervezas/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

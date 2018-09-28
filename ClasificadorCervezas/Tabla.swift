@@ -40,7 +40,7 @@ class Tabla: UITableViewController  {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
 
         cell.textLabel?.text = self.modelos[indexPath.row]
- 
+        cell.layer.cornerRadius = cell.frame.height / 2
         // Configure the cell...
 
         return cell
@@ -96,8 +96,11 @@ class Tabla: UITableViewController  {
         let cc = tabBarController as! Tabulador
         let ip = self.tableView.indexPathForSelectedRow
         cc.model = modelos[ip?.row ?? 0]
+        tableView.deselectRow(at: indexPath, animated: true)
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
     }
+   
+   
 }
