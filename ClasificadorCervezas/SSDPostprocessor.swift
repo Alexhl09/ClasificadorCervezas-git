@@ -88,7 +88,7 @@ class SSDPostProcessor {
     var threshold: Double
     var classNames: [String]? = nil
     
-    init(numAnchors: Int, numClasses: Int, threshold: Double = 0.5) {
+    init(numAnchors: Int, numClasses: Int, threshold: Double = 0.4) {
         self.numAnchors = numAnchors
         self.numClasses = numClasses
         self.threshold = threshold
@@ -106,9 +106,10 @@ class SSDPostProcessor {
     
     func postprocess(boxPredictions: MLMultiArray, classPredictions: MLMultiArray) -> [Prediction] {
         let prunedPredictions = pruneLowScoring(boxPredictions: boxPredictions, classPredictions: classPredictions)
-        
+
         let foo = nonMaximumSupression(predictions: prunedPredictions)
         return foo
+
     }
     
     private func nonMaximumSupression(predictions: [[Prediction]]) -> [Prediction] {
@@ -116,8 +117,8 @@ class SSDPostProcessor {
         
         for klass in 1...numClasses {
             let predictionsForClass = predictions[klass]
-            
-            let supressedPredictions = nonMaximumSupressionForClass(predictions: predictionsForClass, iouThreshold: 0.8, maxBoxes: 10)
+//            print(klass)
+            let supressedPredictions = nonMaximumSupressionForClass(predictions: predictionsForClass, iouThreshold: 0.5, maxBoxes: 10)
 
             finalPredictions.append(contentsOf: supressedPredictions)
         }
@@ -149,8 +150,7 @@ class SSDPostProcessor {
             // given threshold amount? Then it's too similar, so don't keep it.
             for boxB in selectedPredictions {
                 if IOU(boxA.finalPrediction.toCGRect(), boxB.finalPrediction.toCGRect()) > iouThreshold {
-                    print(iouThreshold)
-                    print(1)
+                    
                     shouldSelect = false
                     break
                 }
@@ -169,14 +169,14 @@ class SSDPostProcessor {
     
     private func pruneLowScoring(boxPredictions: MLMultiArray, classPredictions: MLMultiArray) -> [[Prediction]] {
         var prunedPredictions: [[Prediction]] = Array(repeating: [], count: numClasses + 1)
-        
+ 
         for klass in 1...numClasses {
             for box in 0...(numAnchors-1) {
+//                print(klass)
                 // Did you crash here? check SSDViewController and make sure you have the correct number of classes.
                 let score = classPredictions[offset(klass, box)].doubleValue
                 if score > threshold {
-                    print(threshold)
-                    print("3")
+                  
                     let anchor = BoundingBox2.init(fromAnchor: Anchors.ssdAnchors[box])
                     let anchorEncoding = AnchorEncoding(
                         ty: boxPredictions[offset(0, box)].doubleValue,

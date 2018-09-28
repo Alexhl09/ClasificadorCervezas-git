@@ -149,7 +149,7 @@ public func nonMaxSuppressionMultiClass(numClasses: Int,
   // Look at all the classes one-by-one.
   for c in 0..<numClasses {
     var filteredBoxes = [Int]()
-
+print(numClasses)
     // Look at every bounding box for this class.
     for p in 0..<predictions.count {
       let prediction = predictions[p]

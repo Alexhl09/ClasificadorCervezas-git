@@ -25,6 +25,7 @@ class BoundingBox {
   }
 
     func show(frame: CGRect, label: String, color: UIColor, textColor: UIColor = .black, colors: [UIColor], names : [String]) {
+        print(colors.count)
     let path = UIBezierPath(rect: frame)
         var index = 0
 
@@ -40,9 +41,8 @@ class BoundingBox {
             
         }
     shapeLayer.path = path.cgPath
-    shapeLayer.shadowColor = UIColor.black.cgColor
-        print(shapeLayer.visibleRect)
-    shapeLayer.lineWidth = 8.0
+    shapeLayer.fillColor = colors[index].withAlphaComponent(0.45).cgColor
+    shapeLayer.lineWidth = 6.0
     shapeLayer.strokeColor = colors[index].cgColor
     shapeLayer.isHidden = false
     
@@ -52,6 +52,7 @@ class BoundingBox {
 //    shapeLayer.fillColor = colors[index].cgColor
 
     textLayer.string = label
+    textLayer.font = UIFont(name: "HelveticaNeue-Light", size: 14)
     textLayer.foregroundColor = textColor.cgColor
     textLayer.backgroundColor = colors[index].cgColor
     textLayer.isHidden = false

@@ -36,7 +36,7 @@ class ViewControllerCamara: UIViewController, AVCaptureVideoDataOutputSampleBuff
     var screenWidth: Double?
     
     //    IMPORTANT CHANGE ME TO THE CORRECT NUMBER OF CLASSES
-    let ssdPostProcessor = SSDPostProcessor(numAnchors: 1917, numClasses: 2)
+    let ssdPostProcessor = SSDPostProcessor(numAnchors: 1917, numClasses: 13)
     var visionModel:VNCoreMLModel?
     
     
@@ -76,7 +76,7 @@ class ViewControllerCamara: UIViewController, AVCaptureVideoDataOutputSampleBuff
         {
             
         }
-        print(labelNames)
+  
         for i in labelNames
         {
             let red = CGFloat.random(in: 0..<255)
@@ -85,7 +85,7 @@ class ViewControllerCamara: UIViewController, AVCaptureVideoDataOutputSampleBuff
             
             let color = UIColor.init(red: red/255, green: green/255, blue: blue/255, alpha: 0.9)
             colores.append(color)
-            print(color)
+    
         }
         self.view.backgroundColor = UIColor.black
         self.cameraView?.layer.addSublayer(self.cameraLayer)
@@ -129,9 +129,66 @@ class ViewControllerCamara: UIViewController, AVCaptureVideoDataOutputSampleBuff
     }
     
     func setupVision() {
-        guard let visionModel = try? VNCoreMLModel(for: ssd_mobilenet_4_1().model)
-            else { fatalError("Can't load VisionML model") }
-        self.visionModel = visionModel
+        let tabber  = tabBarController as! Tabulador
+  
+        print(tabber.model)
+
+        switch tabber.model {
+        case "ssd_mobilenet.mlmodel":
+            guard let visionModel = try? VNCoreMLModel(for: ssd_mobilenet().model)
+                else { fatalError("Can't load VisionML model") }
+            self.visionModel = visionModel
+            break
+        case "ssd_mobilenet_2.mlmodel":
+            guard let visionModel = try? VNCoreMLModel(for: ssd_mobilenet_2().model)
+                else { fatalError("Can't load VisionML model") }
+            self.visionModel = visionModel
+            break
+        case "ssd_mobilenet_3.mlmodel":
+            guard let visionModel = try? VNCoreMLModel(for: ssd_mobilenet_3().model)
+                else { fatalError("Can't load VisionML model") }
+            self.visionModel = visionModel
+            break
+        case "ssd_mobilenet_4.mlmodel":
+            guard let visionModel = try? VNCoreMLModel(for: ssd_mobilenet_4().model)
+                else { fatalError("Can't load VisionML model") }
+            self.visionModel = visionModel
+            break
+        case "ssd_mobilenet_5.mlmodel":
+            guard let visionModel = try? VNCoreMLModel(for: ssd_mobilenet_5().model)
+                else { fatalError("Can't load VisionML model") }
+            self.visionModel = visionModel
+            break
+        case "ssd_mobilenet_6.mlmodel":
+            guard let visionModel = try? VNCoreMLModel(for: ssd_mobilenet_6().model)
+                else { fatalError("Can't load VisionML model") }
+            self.visionModel = visionModel
+            break
+        case "ssd_mobilenet_7.mlmodel":
+            guard let visionModel = try? VNCoreMLModel(for: ssd_mobilenet_7().model)
+                else { fatalError("Can't load VisionML model") }
+            self.visionModel = visionModel
+            break
+        case "ssd_mobilenet_8.mlmodel":
+            guard let visionModel = try? VNCoreMLModel(for: ssd_mobilenet_8().model)
+                else { fatalError("Can't load VisionML model") }
+            self.visionModel = visionModel
+            break
+        case "ssd_mobilenet_9.mlmodel":
+            guard let visionModel = try? VNCoreMLModel(for: ssd_mobilenet_9().model)
+                else { fatalError("Can't load VisionML model") }
+            self.visionModel = visionModel
+            break
+            
+        default:
+            guard let visionModel = try? VNCoreMLModel(for: ssd_mobilenet_4().model)
+                else { fatalError("Can't load VisionML model") }
+            self.visionModel = visionModel
+            break
+        }
+        print(visionModel?.description)
+        
+       
     }
     
     func processClassifications(for request: VNRequest, error: Error?) -> [Prediction]? {
@@ -142,13 +199,18 @@ class ViewControllerCamara: UIViewController, AVCaptureVideoDataOutputSampleBuff
         guard let results = request.results as? [VNCoreMLFeatureValueObservation] else {
             return nil
         }
+//        print(results.count)
         guard results.count == 2 else {
             return nil
         }
+        
         guard let boxPredictions = results[1].featureValue.multiArrayValue,
             let classPredictions = results[0].featureValue.multiArrayValue else {
                 return nil
         }
+ 
+        
+        
         DispatchQueue.main.async {
             
             self.frameLabel.text = "FPS: \(framesPerSecond.format(f: ".3"))"
@@ -161,8 +223,10 @@ class ViewControllerCamara: UIViewController, AVCaptureVideoDataOutputSampleBuff
     func drawBoxes(predictions: [Prediction]) {
         
         for (index, prediction) in predictions.enumerated() {
+            print(prediction)
+            print(index)
             if let classNames = self.ssdPostProcessor.classNames {
-                //print("Class: \(classNames[prediction.detectedClass])")
+                print("Class: \(classNames[prediction.detectedClass])")
                 if(classNames[prediction.detectedClass].count != 0)
                 {
                     self.mP.text = classNames[prediction.detectedClass]
@@ -194,8 +258,60 @@ class ViewControllerCamara: UIViewController, AVCaptureVideoDataOutputSampleBuff
         guard let pixelBuffer = CMSampleBufferGetImageBuffer(sampleBuffer) else {
             return
         }
-        guard let visionModel = self.visionModel else {
-            return
+        
+        let tabber = tabBarController as! Tabulador
+        switch tabber.model {
+        case "ssd_mobilenet.mlmodel":
+            guard let visionModel = try? VNCoreMLModel(for: ssd_mobilenet().model)
+                else { fatalError("Can't load VisionML model") }
+            self.visionModel = visionModel
+            break
+        case "ssd_mobilenet_2.mlmodel":
+            guard let visionModel = try? VNCoreMLModel(for: ssd_mobilenet_2().model)
+                else { fatalError("Can't load VisionML model") }
+            self.visionModel = visionModel
+            break
+        case "ssd_mobilenet_3.mlmodel":
+            guard let visionModel = try? VNCoreMLModel(for: ssd_mobilenet_3().model)
+                else { fatalError("Can't load VisionML model") }
+            self.visionModel = visionModel
+            break
+        case "ssd_mobilenet_4.mlmodel":
+            guard let visionModel = try? VNCoreMLModel(for: ssd_mobilenet_4().model)
+                else { fatalError("Can't load VisionML model") }
+            self.visionModel = visionModel
+            break
+        case "ssd_mobilenet_5.mlmodel":
+            guard let visionModel = try? VNCoreMLModel(for: ssd_mobilenet_5().model)
+                else { fatalError("Can't load VisionML model") }
+            self.visionModel = visionModel
+            break
+        case "ssd_mobilenet_6.mlmodel":
+            guard let visionModel = try? VNCoreMLModel(for: ssd_mobilenet_6().model)
+                else { fatalError("Can't load VisionML model") }
+            self.visionModel = visionModel
+            break
+        case "ssd_mobilenet_7.mlmodel":
+            guard let visionModel = try? VNCoreMLModel(for: ssd_mobilenet_7().model)
+                else { fatalError("Can't load VisionML model") }
+            self.visionModel = visionModel
+            break
+        case "ssd_mobilenet_8.mlmodel":
+            guard let visionModel = try? VNCoreMLModel(for: ssd_mobilenet_8().model)
+                else { fatalError("Can't load VisionML model") }
+            self.visionModel = visionModel
+            break
+        case "ssd_mobilenet_9.mlmodel":
+            guard let visionModel = try? VNCoreMLModel(for: ssd_mobilenet_9().model)
+                else { fatalError("Can't load VisionML model") }
+            self.visionModel = visionModel
+            break
+            
+        default:
+            guard let visionModel = try? VNCoreMLModel(for: ssd_mobilenet_4().model)
+                else { fatalError("Can't load VisionML model") }
+            self.visionModel = visionModel
+            break
         }
         
         var requestOptions:[VNImageOption : Any] = [:]
@@ -204,7 +320,8 @@ class ViewControllerCamara: UIViewController, AVCaptureVideoDataOutputSampleBuff
         }
         let orientation = CGImagePropertyOrientation(rawValue: UInt32(EXIFOrientation.rightTop.rawValue))
         
-        let trackingRequest = VNCoreMLRequest(model: visionModel) { (request, error) in
+        let trackingRequest = VNCoreMLRequest(model: self.visionModel!) { (request, error) in
+        
             guard let predictions = self.processClassifications(for: request, error: error) else { return }
             DispatchQueue.main.async {
                 self.drawBoxes(predictions: predictions)
