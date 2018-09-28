@@ -23,7 +23,6 @@
 		71016126215C1678001D13A5 /* CVPixelBuffer+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7101611D215C1677001D13A5 /* CVPixelBuffer+Helpers.swift */; };
 		71016127215C1678001D13A5 /* NonMaxSuppression.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7101611E215C1677001D13A5 /* NonMaxSuppression.swift */; };
 		71016128215C1678001D13A5 /* MLMultiArray+Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7101611F215C1677001D13A5 /* MLMultiArray+Image.swift */; };
-		7101612E215C169A001D13A5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71016129215C1699001D13A5 /* ViewController.swift */; };
 		7101612F215C169A001D13A5 /* SSDPostprocessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7101612A215C169A001D13A5 /* SSDPostprocessor.swift */; };
 		71016130215C169A001D13A5 /* labels.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7101612B215C169A001D13A5 /* labels.txt */; };
 		71016131215C169A001D13A5 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7101612C215C169A001D13A5 /* Utility.swift */; };
@@ -42,6 +41,7 @@
 		719E2669215E720E00707D17 /* ssd_mobilenet_5.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 719E265F215E720E00707D17 /* ssd_mobilenet_5.mlmodel */; };
 		719E266A215E720E00707D17 /* ssd_mobilenet_4.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 719E2660215E720E00707D17 /* ssd_mobilenet_4.mlmodel */; };
 		719E266C215E907A00707D17 /* ssd_mobilenet_10.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 719E266B215E907A00707D17 /* ssd_mobilenet_10.mlmodel */; };
+		719E266E215ED19900707D17 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719E266D215ED19900707D17 /* ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -63,7 +63,6 @@
 		7101611D215C1677001D13A5 /* CVPixelBuffer+Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CVPixelBuffer+Helpers.swift"; sourceTree = "<group>"; };
 		7101611E215C1677001D13A5 /* NonMaxSuppression.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NonMaxSuppression.swift; sourceTree = "<group>"; };
 		7101611F215C1677001D13A5 /* MLMultiArray+Image.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MLMultiArray+Image.swift"; sourceTree = "<group>"; };
-		71016129215C1699001D13A5 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = "../../../../../Downloads/Core-ML-Custom-Object-Detection-master/SSDMobileNet/SSDMobileNet/ViewController.swift"; sourceTree = "<group>"; };
 		7101612A215C169A001D13A5 /* SSDPostprocessor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SSDPostprocessor.swift; sourceTree = "<group>"; };
 		7101612B215C169A001D13A5 /* labels.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = labels.txt; sourceTree = "<group>"; };
 		7101612C215C169A001D13A5 /* Utility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
@@ -82,6 +81,7 @@
 		719E265F215E720E00707D17 /* ssd_mobilenet_5.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = ssd_mobilenet_5.mlmodel; sourceTree = "<group>"; };
 		719E2660215E720E00707D17 /* ssd_mobilenet_4.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = ssd_mobilenet_4.mlmodel; sourceTree = "<group>"; };
 		719E266B215E907A00707D17 /* ssd_mobilenet_10.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = ssd_mobilenet_10.mlmodel; sourceTree = "<group>"; };
+		719E266D215ED19900707D17 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,10 +128,10 @@
 				710160DB215ACC30001D13A5 /* Assets.xcassets */,
 				710160DD215ACC30001D13A5 /* LaunchScreen.storyboard */,
 				710160E0215ACC30001D13A5 /* Info.plist */,
-				71016129215C1699001D13A5 /* ViewController.swift */,
 				710160D8215ACC2F001D13A5 /* ClasificadorCervezas.xcdatamodeld */,
 				719E262F215E0DD400707D17 /* Tabla.swift */,
 				719E2633215E102400707D17 /* Tabulador.swift */,
+				719E266D215ED19900707D17 /* ViewController.swift */,
 			);
 			path = ClasificadorCervezas;
 			sourceTree = "<group>";
@@ -242,7 +242,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7101612E215C169A001D13A5 /* ViewController.swift in Sources */,
 				719E2661215E720E00707D17 /* ssd_mobilenet_8.mlmodel in Sources */,
 				719E2663215E720E00707D17 /* ssd_mobilenet.mlmodel in Sources */,
 				7101612F215C169A001D13A5 /* SSDPostprocessor.swift in Sources */,
@@ -252,6 +251,7 @@
 				719E2634215E102400707D17 /* Tabulador.swift in Sources */,
 				719E2667215E720E00707D17 /* ssd_mobilenet_6.mlmodel in Sources */,
 				71016115215C1670001D13A5 /* Anchors.swift in Sources */,
+				719E266E215ED19900707D17 /* ViewController.swift in Sources */,
 				719E2664215E720E00707D17 /* my_model2.mlmodel in Sources */,
 				719E25E7215DCFD300707D17 /* Fotos.swift in Sources */,
 				719E2669215E720E00707D17 /* ssd_mobilenet_5.mlmodel in Sources */,
