@@ -31,17 +31,6 @@
 		719E25E7215DCFD300707D17 /* Fotos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719E25E6215DCFD300707D17 /* Fotos.swift */; };
 		719E2630215E0DD400707D17 /* Tabla.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719E262F215E0DD400707D17 /* Tabla.swift */; };
 		719E2634215E102400707D17 /* Tabulador.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719E2633215E102400707D17 /* Tabulador.swift */; };
-		719E2649215E55FB00707D17 /* ssd_mobilenet_8.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 719E2640215E55FA00707D17 /* ssd_mobilenet_8.mlmodel */; };
-		719E264A215E55FB00707D17 /* ssd_mobilenet.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 719E2641215E55FA00707D17 /* ssd_mobilenet.mlmodel */; };
-		719E264B215E55FB00707D17 /* my_model2.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 719E2642215E55FA00707D17 /* my_model2.mlmodel */; };
-		719E264C215E55FB00707D17 /* ssd_mobilenet_2.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 719E2643215E55FA00707D17 /* ssd_mobilenet_2.mlmodel */; };
-		719E264D215E55FB00707D17 /* ssd_mobilenet_3.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 719E2644215E55FA00707D17 /* ssd_mobilenet_3.mlmodel */; };
-		719E264E215E55FB00707D17 /* MyCustomObjectDetector.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 719E2645215E55FA00707D17 /* MyCustomObjectDetector.mlmodel */; };
-		719E264F215E55FB00707D17 /* ssd_mobilenet_6.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 719E2646215E55FA00707D17 /* ssd_mobilenet_6.mlmodel */; };
-		719E2650215E55FB00707D17 /* ssd_mobilenet_7.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 719E2647215E55FA00707D17 /* ssd_mobilenet_7.mlmodel */; };
-		719E2651215E55FB00707D17 /* ssd_mobilenet_5.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 719E2648215E55FA00707D17 /* ssd_mobilenet_5.mlmodel */; };
-		719E2653215E580300707D17 /* ssd_mobilenet_4.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 719E2652215E580300707D17 /* ssd_mobilenet_4.mlmodel */; };
-		719E2655215E5BC400707D17 /* ssd_mobilenet_9.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 719E2654215E5BC400707D17 /* ssd_mobilenet_9.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -71,17 +60,6 @@
 		719E25E6215DCFD300707D17 /* Fotos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fotos.swift; sourceTree = "<group>"; };
 		719E262F215E0DD400707D17 /* Tabla.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tabla.swift; sourceTree = "<group>"; };
 		719E2633215E102400707D17 /* Tabulador.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tabulador.swift; sourceTree = "<group>"; };
-		719E2640215E55FA00707D17 /* ssd_mobilenet_8.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = ssd_mobilenet_8.mlmodel; sourceTree = "<group>"; };
-		719E2641215E55FA00707D17 /* ssd_mobilenet.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = ssd_mobilenet.mlmodel; sourceTree = "<group>"; };
-		719E2642215E55FA00707D17 /* my_model2.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = my_model2.mlmodel; sourceTree = "<group>"; };
-		719E2643215E55FA00707D17 /* ssd_mobilenet_2.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = ssd_mobilenet_2.mlmodel; sourceTree = "<group>"; };
-		719E2644215E55FA00707D17 /* ssd_mobilenet_3.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = ssd_mobilenet_3.mlmodel; sourceTree = "<group>"; };
-		719E2645215E55FA00707D17 /* MyCustomObjectDetector.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = MyCustomObjectDetector.mlmodel; sourceTree = "<group>"; };
-		719E2646215E55FA00707D17 /* ssd_mobilenet_6.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = ssd_mobilenet_6.mlmodel; sourceTree = "<group>"; };
-		719E2647215E55FA00707D17 /* ssd_mobilenet_7.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = ssd_mobilenet_7.mlmodel; sourceTree = "<group>"; };
-		719E2648215E55FA00707D17 /* ssd_mobilenet_5.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = ssd_mobilenet_5.mlmodel; sourceTree = "<group>"; };
-		719E2652215E580300707D17 /* ssd_mobilenet_4.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = ssd_mobilenet_4.mlmodel; sourceTree = "<group>"; };
-		719E2654215E5BC400707D17 /* ssd_mobilenet_9.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = ssd_mobilenet_9.mlmodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,17 +133,6 @@
 		719E263F215E55FA00707D17 /* modelos */ = {
 			isa = PBXGroup;
 			children = (
-				719E2652215E580300707D17 /* ssd_mobilenet_4.mlmodel */,
-				719E2640215E55FA00707D17 /* ssd_mobilenet_8.mlmodel */,
-				719E2641215E55FA00707D17 /* ssd_mobilenet.mlmodel */,
-				719E2654215E5BC400707D17 /* ssd_mobilenet_9.mlmodel */,
-				719E2642215E55FA00707D17 /* my_model2.mlmodel */,
-				719E2643215E55FA00707D17 /* ssd_mobilenet_2.mlmodel */,
-				719E2644215E55FA00707D17 /* ssd_mobilenet_3.mlmodel */,
-				719E2645215E55FA00707D17 /* MyCustomObjectDetector.mlmodel */,
-				719E2646215E55FA00707D17 /* ssd_mobilenet_6.mlmodel */,
-				719E2647215E55FA00707D17 /* ssd_mobilenet_7.mlmodel */,
-				719E2648215E55FA00707D17 /* ssd_mobilenet_5.mlmodel */,
 			);
 			path = modelos;
 			sourceTree = SOURCE_ROOT;
@@ -242,35 +209,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				719E2649215E55FB00707D17 /* ssd_mobilenet_8.mlmodel in Sources */,
 				7101612E215C169A001D13A5 /* ViewController.swift in Sources */,
-				719E264A215E55FB00707D17 /* ssd_mobilenet.mlmodel in Sources */,
 				7101612F215C169A001D13A5 /* SSDPostprocessor.swift in Sources */,
 				71016124215C1678001D13A5 /* Predictions.swift in Sources */,
 				710160D4215ACC2F001D13A5 /* ViewControllerCamara.swift in Sources */,
 				719E2630215E0DD400707D17 /* Tabla.swift in Sources */,
 				719E2634215E102400707D17 /* Tabulador.swift in Sources */,
-				719E2650215E55FB00707D17 /* ssd_mobilenet_7.mlmodel in Sources */,
-				719E264B215E55FB00707D17 /* my_model2.mlmodel in Sources */,
-				719E2651215E55FB00707D17 /* ssd_mobilenet_5.mlmodel in Sources */,
-				719E2655215E5BC400707D17 /* ssd_mobilenet_9.mlmodel in Sources */,
 				71016115215C1670001D13A5 /* Anchors.swift in Sources */,
 				719E25E7215DCFD300707D17 /* Fotos.swift in Sources */,
 				71016125215C1678001D13A5 /* MultiArray.swift in Sources */,
-				719E264E215E55FB00707D17 /* MyCustomObjectDetector.mlmodel in Sources */,
 				71016123215C1678001D13A5 /* BoundingBox.swift in Sources */,
 				71016127215C1678001D13A5 /* NonMaxSuppression.swift in Sources */,
 				710160DA215ACC2F001D13A5 /* ClasificadorCervezas.xcdatamodeld in Sources */,
 				71016121215C1678001D13A5 /* UIImage+CVPixelBuffer.swift in Sources */,
 				71016134215C16ED001D13A5 /* Menu.swift in Sources */,
-				719E2653215E580300707D17 /* ssd_mobilenet_4.mlmodel in Sources */,
-				719E264C215E55FB00707D17 /* ssd_mobilenet_2.mlmodel in Sources */,
 				71016122215C1678001D13A5 /* Array.swift in Sources */,
 				71016128215C1678001D13A5 /* MLMultiArray+Image.swift in Sources */,
 				71016126215C1678001D13A5 /* CVPixelBuffer+Helpers.swift in Sources */,
 				710160D2215ACC2F001D13A5 /* AppDelegate.swift in Sources */,
-				719E264F215E55FB00707D17 /* ssd_mobilenet_6.mlmodel in Sources */,
-				719E264D215E55FB00707D17 /* ssd_mobilenet_3.mlmodel in Sources */,
 				71016120215C1678001D13A5 /* Math.swift in Sources */,
 				71016131215C169A001D13A5 /* Utility.swift in Sources */,
 			);
